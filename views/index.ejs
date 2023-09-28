@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>All Posts</h1>
+    <div class="nav">
+      <button><a href="/posts/new">New post</a></button>
+    </div>
+    <%for (post of posts){%>
+    <div class="post">
+      <p class="user">@<%=post.username%></p>
+      <p class="content"><%=post.content%></p>
+      <button><a href="/posts/<%=post.id%>">view post</a></button>
+      <button>edit post</button>
+      <button>delete post</button>
+    </div>
+
+    <%}%>
+  </body>
+</html>
