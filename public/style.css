@@ -1,19 +1,105 @@
-h1 {
-  color: brown;
+* {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav {
+h1 {
+  border: 0;
+  margin: 0;
+  font-size: 40px;
+  color: rgb(0, 238, 255);
+}
+body {
+  background-color: rgb(20, 19, 19);
+  color: white;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.post img{
+  max-width: 100%;
+}
+
+.price{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+p{
+  margin: 5px;
 }
 
 .post {
-  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 10px;
   padding: 10px;
-  border: 1px solid black;
+  box-shadow: 1px 2px 10px 4px rgb(13, 255, 0);
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.greenbutton {
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(0, 197, 0);
+  border: none;
+}
+.greenbutton a {
+  color: white;
+}
+
+.bluebutton {
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: blue;
+  border: none;
+}
+.bluebutton a {
+  color: white;
+}
+
+.redbutton {
+  
+  margin: 5px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 40, 40);
+  border: none;
+}
+.redbutton a {
+  color: white;
+}
+
+.bet{
+  color: rgba(113, 255, 253, 0.756);
+}
+
+.form{
+  margin: 10px;
 }
 
 .user {
-  font-size: 20px;
+  padding: 0;
+  margin: 10px;
+  font-size: 30px;
   font-weight: 700;
+}
+
+body .nav {
+
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
 }

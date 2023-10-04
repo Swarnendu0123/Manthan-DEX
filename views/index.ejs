@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>All Posts</h1>
+    <h1>Manthan DEX</h1>
     <div class="nav">
-      <button><a href="/posts/new">New post</a></button>
+      <button class="greenbutton"><a href="/posts/new">New DEX</a></button>
     </div>
     <%for (post of posts){%>
     <div class="post">
-      <p class="user">@<%=post.username%></p>
+      <p class="user">Owned by: <%=post.username%></p>
+      <img src="<%=post.img%>" alt="" />
+      <p class="price">Price: <%=post.price%></p>
+      <%max = 0%>
+      <% for(bet of post.betting){%> <%max = Math.max(max,
+      bet.price)%> <%}%>
+      <p class="price">Heighest Betting Price: <%= max %>(INR)</p>
       <p class="content"><%=post.content%></p>
-      <button><a href="/posts/<%=post.id%>">view post</a></button>
-      <button>edit post</button>
-      <button>delete post</button>
+      <div class="buttons">
+        <button class="greenbutton">
+          <a href="/posts/<%=post.id%>">View DEX</a>
+        </button>
+        <button class="bluebutton">
+          <a href="/posts/<%=post.id%>/edit">Edit DEX</a>
+        </button>
+        <form method="POST" action="/posts/<%=post.id%>?_method=DELETE">
+          <button class="redbutton">Delete DEX</button>
+        </form>
+      </div>
     </div>
 
     <%}%>

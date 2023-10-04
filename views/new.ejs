@@ -4,19 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Post</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <form method="post" action="/posts">
-      <input type="text" name="id" id="id" class="id" placeholder="id"/>
-      <br />
-      <br />
-      <input type="email" placeholder="User name" name="username" />
-      <br />
-      <br />
-      <textarea name="content" id="content" cols="30" rows="10"></textarea>
-      <br />
-      <br />
-      <button>Submit</button>
-    </form>
+    <button class="bluebutton"><a href="/posts">Go back</a></button>
+    <div class="form">
+      <form method="post" action="/posts">
+        <input type="text" placeholder="User name" name="username" />
+        <br />
+        <br />
+        <textarea
+          name="content"
+          id="content"
+          cols="40"
+          rows="10"
+          placeholder="Write your DEX here"
+        ></textarea>
+        <br />
+        <br />
+        <input type="text" placeholder="paste the link of img" name="img" />
+        <br />
+        <br />
+        <input type="number" placeholder="set your price" name="price" />
+        <br />
+        <br />
+        <button class="greenbutton">Post</button>
+      </form>
+    </div>
   </body>
 </html>

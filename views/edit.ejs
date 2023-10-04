@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit your Post</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Edit your post</h1>
+    <p>post id: <%= post.id%></p>
+    <p class="user">Owned by: <%=post.username%></p>
+    <form method="POST" action="/posts/<%=post.id%>?_method=PATCH">
+      <br />
+      <br />
+      <textarea
+        name="content"
+        id="content"
+        cols="70"
+        rows="10"
+        placeholder="Write your post here"
+      >
+<%= post.content%></textarea
+      >
+      <br />
+      <br />
+
+      <textarea
+        name="img"
+        id="img"
+        cols="70"
+        rows="1"
+        placeholder="paste your link"
+      >
+<%= post.img%></textarea
+      >
+      <br />
+      <br />
+      <input
+        type="number"
+        placeholder="price"
+        value="<%=post.price%>"
+        name="price"
+      />
+      <br />
+      <br />
+      <button class="bluebutton" type="submit">Save changes</button>
+      <button class="redbutton"><a href="/posts">Discard changes</a></button>
+    </form>
+  </body>
+</html>

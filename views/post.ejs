@@ -6,10 +6,26 @@
     <title>Post <%= post.id%></title>
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <button><a href="/posts">Go back</a></button>
-  <body class="post">
-    <p>post id: <%=post.id%></p>
-    <h1><%=post.username%></h1>
-    <p><%=post.content%></p>
+  <button class="bluebutton"><a href="/posts">Go back</a></button>
+  <body>
+    <div class="post">
+      <p>post id: <%=post.id%></p>
+      <p class="user">Owned by: <%=post.username%></p>
+      <img src="<%=post.img%>" alt="" />
+      <p class="price">Price: <%=post.price%> (INR)</p>
+      <%max = 0%> <% for(bet of post.betting){%> <%max = Math.max(max,
+      bet.price)%> <%}%>
+      <p class="price">Heighest Betting Price: <%= max %> (INR)</p>
+      <p class="price bet">Betteings</p>
+      <% for(bet of post.betting){%>
+      <p ><%=bet.name%>: <%=bet.price%>(INR)</p>
+      <%}%>
+      <form action="/posts/bet/<%=post.id%>" method="post">
+        <input type="name" placeholder="Enter Your name" name="name" />
+        <input type="number" placeholder="Betting Price" name="price" />
+        <button class="greenbutton">BET</button>
+      </form>
+      <p><%=post.content%></p>
+    </div>
   </body>
 </html>
