@@ -18,7 +18,7 @@ let posts = [
     username: "Prakhar",
     content:
       "Bulbasaur is known as the Seed Pokémon. It resembles a small, quadrupedal dinosaur that has blue-green skin with darker blue-green spots. Its most notable feature is the plant bulb on its back. The bulb is planted there at birth and grows with this Pokémon. Bulbasaur is often seen basking in the sun, using the nutrients from the bulb to grow. If the bulb on its back is healthy, it will grow into a large plant.",
-    img: "/poke_dex/bulbasaur.jpg",
+    img: "/poke_dex/bulbasaur.png",
     price: 199,
     betting: [
       { name: "Swarnendu", price: 599 },
@@ -30,7 +30,7 @@ let posts = [
     username: "Sameer",
     content:
       "Pikachu is a small, yellow, rodent-like creature with long ears and a lightning bolt-shaped tail. Its cheeks are plump and can generate electricity. Pikachu uses its tail to channel this electricity when it releases electrical discharges. In the Pokémon world, Pikachu is known for its quickness, agility, and its ability to generate electrical power. Pikachu evolves from Pichu when leveled up with high friendship and evolves into Raichu when exposed to a Thunder Stone. It is one of the most recognizable and iconic Pokémon species.",
-    img: "/poke_dex/pikachu.jpg",
+    img: "/poke_dex/pikachu.png",
     price: 249,
     betting: [
       { name: "Swarnendu", price: 599 },
@@ -42,7 +42,7 @@ let posts = [
     username: "Nissim",
     content:
       "Charmander is a small, dinosaur-like Pokémon. It is primarily orange with a cream underside from the chest down and on the soles of its feet. It has two small fangs visible in its upper jaw and blue eyes. Its most distinctive feature is the flame on its tail, which burns brightly and indicates Charmander's life force. If the flame goes out, it is said that Charmander will die. However, this does not harm the Pokémon, as it can reignite the flame with a little fire and the willingness to survive.",
-    img: "/poke_dex/charmander.jpg",
+    img: "/poke_dex/charmander.png",
     price: 99,
     betting: [
       { name: "Swarnendu", price: 599 },
